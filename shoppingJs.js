@@ -5,6 +5,10 @@ const deleteButton = document.querySelectorAll(".btn-primary");
 const quantitiesButton = document.querySelectorAll(".x");
 const prices = document.querySelectorAll(".price");
 const bigDivs = document.querySelectorAll(".card");
+const lovebtn = document.querySelectorAll(".PeaceAndLove");
+
+
+
 for (let i = 0; i < buttonMinus.length; i++) {
   buttonMinus[i].addEventListener("click", function (e) {
     if (quantitiesButton[i].innerHTML > 0) {
@@ -31,3 +35,13 @@ for (let i = 0; i < deleteButton.length; i++) {
         parseInt(prices[i].textContent);
   });
 }
+
+
+for (let i = 0; i < lovebtn.length; i++){
+    lovebtn[i].addEventListener("click", function (){
+        
+       lovebtn[i].setAttribute('src' , 'balloon-heart-fill.png');    
+
+           }  )  ;
+};
+
